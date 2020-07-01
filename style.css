@@ -1,0 +1,124 @@
+/* Sets everything to have the width as the actual width size */
+*, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #00C9FF;  
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  
+    background: linear-gradient(to right, #92FE9D, #00C9FF);     
+}
+
+h1 {
+    font-size: 140%;
+    margin: 0;
+    padding: 5.2% 3% 3% 3%;
+    color: #1961d6;
+}
+
+input {
+    width: 100%;
+    padding: 2.5%;
+    outline: none;
+    color: #1961d6;
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #ffffff;
+}
+
+input:hover {
+    border: 3px solid #1961d6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    width: 100%;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+li:nth-child(2n) {
+    background-color: #ffffff;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+li:first-of-type {
+    border-top: 3px solid #1961d6;
+}
+
+li:last-of-type {
+    border-bottom: 3px solid #1961d6;
+}
+
+span:not(.span_toDoTxt) {
+    text-align: center;
+    width: 0px;
+    height: 40px;
+    float: right;
+    opacity: 0;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #1961d6;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+}
+
+.span_toDoTxt {
+    overflow: auto;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.span_trash:hover, .span_edit:hover, .span_completed:hover {
+    border: 2px dashed #000000;
+}
+
+#container_toDoList {
+    width: 50%;
+    margin: 6% auto;
+    border-radius: 7%;
+    padding-bottom: 2.5%;
+    background-color: #c5cddb;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.fa {
+    font-size: 120%;
+}
+
+.fa-plus-square {
+    float: right;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.hideInputBox {
+    display: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+    font-style: italic;
+    
+
+
+}
